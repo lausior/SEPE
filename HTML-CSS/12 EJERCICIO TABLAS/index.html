@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio tablas</title>
+    <style>
+        table{
+            font-family:Arial, Helvetica, sans-serif;
+            margin: auto;
+            border: 1px solid;
+            border-collapse: collapse;
+            width: 80%;
+            text-align: center;
+        }
+
+        caption{
+            color: #000108;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 0.7em;
+        }
+
+        td, th{
+            padding: 20px;
+        }
+
+       
+        #table1 th{
+            background-color: #F29863;
+        }
+        #table1 tr{
+            background-color: #F2DBCE;
+        }
+
+        #table2 th{
+            background-color: #56BF84;
+        }
+
+        #table2 tr{
+            background-color: #D8F2D9;
+        }
+
+        table th{
+            border: 1px solid;
+        }
+        table th{
+            border: 1px solid;
+        }
+        table td{
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!--TABLA 1-->
+    <table id="table1">
+        <caption>Tabla de alérgenos en comidas</caption>
+        <thead>
+            <tr>
+                <th>Plato</th>
+                <th>Alérgeno Principal</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="2">Pizza</td>
+                <td>Gluten</td>
+                <td>Presente en la masa de trigo</td>
+            </tr>
+
+            <tr>
+                <td>Lácteos</td>
+                <td>Queso como ingrediente principal</td>
+            </tr>
+
+             <tr>
+                <td>Ensalada César</td>
+                <td colspan="2">Anchoas en el aderezo y posibles frutos secos</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!-- TABLA 2 -->
+    <table id="table2">
+        <caption>Provincias de Galicia</caption>
+        <thead>
+            <tr>
+                <th>Provincias</th>
+                <th>Región</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="2">A Coruña</td>
+                <td>Norte</td>
+            </tr>
+
+            <tr>
+                <td>Centro</td>
+            </tr>
+            <tr>
+                <td>Pontevedra</td>
+                <td>Sur</td>
+            </tr>
+            <tr>
+                <td>Lugo </td>
+                <td>Interior</td>
+            </tr>
+            <tr>
+                <td>Ourense</td>
+                <td>Montañas</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

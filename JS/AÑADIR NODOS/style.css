@@ -1,0 +1,19 @@
+.contenedor {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bloque {
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.bloque div {
+    margin-top: 15px;
+}

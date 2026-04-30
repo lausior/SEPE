@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="procesar.php" method="post">
+        <!--Nombre -->
+        <label for="nombre-usuario">Nombre</label> <!-- 'for' coincide con el 'name' del input -->
+        <input type="text" name="nombre-usuario" id="id-nombre-usuario">
+        <br>
+        <br>
+
+        <!--Apellidos -->
+        <label for="apellidos-usuario">Apellidos</label>
+        <input type="text" name="apellidos-usuario" id="apellidos-usuario">
+        <br>
+        <br>
+
+        <!--Edad-->
+        <label for="edad-usuario">Fecha de nacimiento</label>
+        <input type="datetime-local" name="fecha-nacimiento" id="fecha-nacimiento">
+        <br>
+        <br>
+
+        <!--Localidad-->
+        <label for="localidad">Localidad</label>
+        <select name="localidad" id="localidad">
+            <option value="santiago">Santiago de Compostela</option>
+            <option value="coruña">A Coruña</option>
+            <option value="ourense">Ourense</option>
+            <option value="lugo">Lugo</option>
+            <option value="pontevedra">Pontevedra</option>
+            <option value="vigo">Vigo</option>
+        </select>
+        <br>
+        <br>
+
+
+        <!-- Input enviar -->
+         <input type="submit" value="Enviar">
+
+
+    </form>
+</body>
+</html>

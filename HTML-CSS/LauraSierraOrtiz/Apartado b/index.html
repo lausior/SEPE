@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Examen</title>
+</head>
+<body>
+
+    <form action="fomularioValidado.php" method="post">
+        <!-- NOMBRE -->
+        <div class="input">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="nombre" placeholder="Laura
+            " required>
+        </div>
+        
+        <!-- APELLIDOS -->
+        <div class="input">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos"  placeholder="Sierra" required>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="input">
+            <label for="password">Contraseña</label>
+            <input type="password" name="password" id="password"  placeholder="12345" required>
+        </div>
+        
+     
+        <!-- ENVIAR/BORRAR -->
+        <button type="submit" value="Enviar">Enviar</button>
+        <button type="reset" value="Borrar">Borrar</button>
+
+
+
+    </form>
+    
+</body>
+</html>

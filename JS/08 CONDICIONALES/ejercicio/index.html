@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+        <div class="input">
+            <label for="">Número 1</label>
+            <input type="number" id="numero1">
+        </div>
+        <div class="input">
+            <label for="">Número 2</label>
+            <input type="number" id="numero2">
+        </div>
+        <button onclick="comprobarNumero()">Comprobar</button>
+
+        <p id="resultado"></p>
+   
+
+
+    <script>
+        //Cogemos el id de los input
+        let numero1 = document.getElementById("numero1");
+        let numero2 = document.getElementById("numero2");
+
+        //Cogemos el id del p
+        let resultado = document.getElementById("resultado");
+
+
+        //Comprobación
+        function comprobarNumero(){
+            //Cogemos el valor introducido en los input
+            let num1 = numero1.value;
+            let num2 = numero2.value;
+
+            if(num1 < num2){
+            resultado.innerHTML = `El número ${num1} es menor que ${num2}`;
+            }
+            else if(num1 > num2){
+                resultado.innerHTML = `El número ${num1} es mayor que ${num2}`;
+            }
+            else{
+                resultado.innerHTML = `Los números ${num1} y ${num2} son iguales`;
+            }
+        }
+        
+    </script>
+</body>
+</html>

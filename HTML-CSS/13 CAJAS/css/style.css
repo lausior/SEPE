@@ -1,0 +1,10 @@
+#caja1{
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    background-color: #80e0f8;
+    display: flex;
+    justify-items:center;
+    align-items: center;
+}
+

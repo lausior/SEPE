@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulario de Datos</h2>
+
+    <form>
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" class="input-text" onblur="validarTexto(this)" required>
+            <p class="error-input">Formato incorrecto (solo letras y espacios)</p>
+        </div>
+
+        <div class="form-group">
+            <label>Apellidos</label>
+            <input type="text" class="input-text" onblur="validarTexto(this)" required>
+            <p class="error-input">Formato incorrecto (solo letras y espacios)</p>
+        </div>
+
+        <div class="form-group">
+            <label>DNI</label>
+            <input type="text" class="input-text" id="dni" onblur="validarDni()" required>
+            <p class="error-input">Formato incorrecto (Válido: 12345678A)</p>
+        </div>
+
+        <div class="form-group">
+            <label>Teléfono</label>
+            <input type="text" class="input-text" onblur="validarTexto(this)" required>
+            <p class="error-input">Formato incorrecto (Válido: 12345678A)</p>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="input-text" onblur="validarTexto(this)" required>
+            <p class="error-input">Formato incorrecto (Válido: 12345678A)</p>
+        </div>
+
+        <div class="form-group">
+            <label>Dirección</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Localidad</label>
+            <input type="text">
+        </div>
+
+        <div class="form-group">
+            <label>Situación laboral</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="desempleado" value="si"> Desempleado
+                </label>
+                <label>
+                    <input type="radio" name="desempleado" value="no"> Empleado
+                </label>
+            </div>
+        </div>
+
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

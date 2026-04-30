@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    width: 800px;
+    height: 800px;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    margin: 1em ;
+    float: left;
+}
+
+#caja1{
+    background-color: red;
+   
+   
+}
+
+#caja2{
+    background-color: rgb(123, 255, 0);
+   
+   
+}
+
+#caja3{
+    background-color: rgb(245, 187, 240);
+    
+}
+
+#caja4{
+    background-color: rgb(0, 0, 0);
+    clear: both;
+  
+}
+
+#caja5{
+    background-color: rgb(31, 27, 252);
+   
+
+}
+
+#caja6{
+    background-color: yellow;
+   
+}
+
+#caja7{
+    background-color: rgb(168, 5, 141);
+    clear: both;
+}
+
+#caja8{
+    background-color: rgb(185, 128, 5);
+    
+}
+#caja9{
+    background-color: grey;
+    
+}

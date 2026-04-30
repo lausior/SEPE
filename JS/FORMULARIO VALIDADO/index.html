@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+    <div class="form-header">
+        <h1>📋 Registro de información</h1>
+        <p>Complete los datos personales y laborales</p>
+    </div>
+    <div class="form-body">
+        <form id="datosForm" novalidate>
+            <div class="form-grid">
+                <!-- Nombre -->
+                <div class="input-group">
+                    <label>Nombre <span class="required-star">*</span></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan" autocomplete="given-name">
+                    <div class="error-text" id="errorNombre"></div>
+                </div>
+
+                <!-- Apellidos -->
+                <div class="input-group">
+                    <label>Apellidos <span class="required-star">*</span></label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Ej: Pérez García" autocomplete="family-name">
+                    <div class="error-text" id="errorApellidos"></div>
+                </div>
+
+                <!-- Email (NUEVO CAMPO) -->
+                <div class="input-group full-width">
+                    <label>Correo electrónico <span class="required-star">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" autocomplete="email">
+                    <div class="error-text" id="errorEmail"></div>
+                    <div class="field-note"></div>
+                </div>
+
+                <!-- Fecha de nacimiento -->
+                <div class="input-group">
+                    <label>Fecha de nacimiento <span class="required-star">*</span></label>
+                    <input type="date" id="fechaNac" name="fechaNacimiento">
+                    <div class="error-text" id="errorFecha"></div>
+                </div>
+
+                <!-- DNI (con validación simple formato) -->
+                <div class="input-group">
+                    <label>DNI / NIE <span class="required-star">*</span></label>
+                    <input type="text" id="dni" name="dni" placeholder="Ej: 12345678Z" autocomplete="off">
+                    <div class="error-text" id="errorDni"></div>
+                    <div class="field-note"></div>
+                </div>
+
+                <!-- Dirección -->
+                <div class="input-group full-width">
+                    <label>Dirección <span class="required-star">*</span></label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Calle, número, piso, etc." autocomplete="address-line1">
+                    <div class="error-text" id="errorDireccion"></div>
+                </div>
+
+                <!-- Provincia -->
+                <div class="input-group">
+                    <label>Provincia <span class="required-star">*</span></label>
+                    <select id="provincia" name="provincia">
+                        <option value="" disabled selected>Seleccione provincia</option>
+                        <option value="Álava">Álava</option><option value="Albacete">Albacete</option><option value="Alicante">Alicante</option>
+                        <option value="Almería">Almería</option><option value="Asturias">Asturias</option><option value="Ávila">Ávila</option>
+                        <option value="Badajoz">Badajoz</option><option value="Baleares">Baleares</option><option value="Barcelona">Barcelona</option>
+                        <option value="Burgos">Burgos</option><option value="Cáceres">Cáceres</option><option value="Cádiz">Cádiz</option>
+                        <option value="Cantabria">Cantabria</option><option value="Castellón">Castellón</option><option value="Ciudad Real">Ciudad Real</option>
+                        <option value="Córdoba">Córdoba</option><option value="Cuenca">Cuenca</option><option value="Gerona">Gerona</option>
+                        <option value="Granada">Granada</option><option value="Guadalajara">Guadalajara</option><option value="Guipúzcoa">Guipúzcoa</option>
+                        <option value="Huelva">Huelva</option><option value="Huesca">Huesca</option><option value="Jaén">Jaén</option>
+                        <option value="La Coruña">La Coruña</option><option value="La Rioja">La Rioja</option><option value="Las Palmas">Las Palmas</option>
+                        <option value="León">León</option><option value="Lérida">Lérida</option><option value="Lugo">Lugo</option>
+                        <option value="Madrid">Madrid</option><option value="Málaga">Málaga</option><option value="Murcia">Murcia</option>
+                        <option value="Navarra">Navarra</option><option value="Orense">Orense</option><option value="Palencia">Palencia</option>
+                        <option value="Pontevedra">Pontevedra</option><option value="Salamanca">Salamanca</option><option value="Segovia">Segovia</option>
+                        <option value="Sevilla">Sevilla</option><option value="Soria">Soria</option><option value="Tarragona">Tarragona</option>
+                        <option value="Santa Cruz de Tenerife">Santa Cruz de Tenerife</option><option value="Teruel">Teruel</option>
+                        <option value="Toledo">Toledo</option><option value="Valencia">Valencia</option><option value="Valladolid">Valladolid</option>
+                        <option value="Vizcaya">Vizcaya</option><option value="Zamora">Zamora</option><option value="Zaragoza">Zaragoza</option>
+                    </select>
+                    <div class="error-text" id="errorProvincia"></div>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="input-group">
+                    <label>Teléfono / Móvil <span class="required-star">*</span></label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 612345678" autocomplete="tel">
+                    <div class="error-text" id="errorTelefono"></div>
+                </div>
+
+                <!-- Número de cuenta (IBAN simplificado, se valida estructura básica) -->
+                <div class="input-group full-width">
+                    <label>Número de cuenta (IBAN) <span class="required-star">*</span></label>
+                    <input type="text" id="cuenta" name="cuenta" placeholder="ES00 0000 0000 0000 0000 0000" autocomplete="off">
+                    <div class="error-text" id="errorCuenta"></div>
+                    <div class="field-note"></div>
+                </div>
+
+                <!-- Desempleado (Si/No) usando radio -->
+                <div class="input-group full-width">
+                    <label>Situación laboral: ¿Desempleado? <span class="required-star">*</span></label>
+                    <div class="radio-group" id="radioDesempleadoGroup">
+                        <div class="radio-option">
+                            <input type="radio" id="desempleadoSi" name="desempleado" value="si">
+                            <label for="desempleadoSi">Sí, desempleado</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="desempleadoNo" name="desempleado" value="no">
+                            <label for="desempleadoNo">No, empleado / otra situación</label>
+                        </div>
+                    </div>
+                    <div class="error-text" id="errorDesempleado"></div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary" id="resetBtn">Limpiar formulario</button>
+                <button type="button" onclick="verificar();">🔍 Enviar</button>
+            </div>
+
+            <div>
+                <p id=""></p>
+            </div>
+
+            <div id="mensajeInfo" class="info-message"></div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

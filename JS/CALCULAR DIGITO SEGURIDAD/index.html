@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor de 2 números</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <article class="card">
+            <header class="card-header">
+                <h1>COMPROBAR NÚMERO DE CUENTA</h1>
+            </header>
+
+            <section class="card-body">
+                <div class="form-group">
+                    <label for="numero">Introduce tu número de cuenta:</label>
+                    <div>
+                        <input type="text" id="numeroCuenta1" placeholder="" minlength="4" maxlength="4" required>
+                        <input type="text" id="numeroCuenta2" placeholder="" minlength="4" maxlength="4" required>
+                        <input type="text" id="numeroCuenta3" placeholder="" minlength="4" maxlength="4" required>
+                        <input type="text" id="numeroCuenta4" placeholder="" minlength="4" maxlength="4" required>
+                        <input type="text" id="numeroCuenta5" placeholder="" minlength="4" maxlength="4" required>
+                        <input type="text" id="numeroCuenta6" placeholder="" minlength="4" maxlength="4" required>
+                    </div>
+
+                </div>
+                <br>
+                <button type="button" onclick="verificar();">🔍 Comprobar</button>
+                </form>
+
+                <output id="resultado"></output>
+            </section>
+
+            <footer>
+                <p>Hecho con cariño en la Academia Postal (c)2026</p>
+            </footer>
+        </article>
+    </main>
+
+    <!-- Bootstrap JS (opcional para ciertas funcionalidades) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

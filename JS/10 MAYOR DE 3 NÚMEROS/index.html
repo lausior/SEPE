@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor de 2 números</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <article class="card">
+            <header class="card-header">
+                <h1>Mayor de 2 números</h1>
+                <p class="subtitle">-Mete dos números y te diré cual es el mayor valor-</p>
+            </header>
+            
+            <section class="card-body">              
+                    <div class="form-group">
+                        <label for="numero1">Numero 1:</label>
+                        <input type="number" id="numero1" placeholder="Ej: 18" min="0" max="999" required>
+                        <label for="numero2">Numero 2:</label>
+                        <input type="number" id="numero2" placeholder="Ej: 18" min="0" max="999" required>
+                        <label for="numero3">Numero 3:</label>
+                        <input type="number" id="numero3" placeholder="Ej: 18" min="0" max="999" required>
+                    </div>
+                    <br>
+                    <button type="button" onclick="verificar();">🔍 Comprobar</button>
+                </form>
+                
+                <output id="resultado"></output>
+            </section>
+            
+            <footer>
+                <p>Hecho con cariño en la Academia Postal (c)2026</p>
+            </footer>
+        </article>
+    </main>
+
+    <!-- Bootstrap JS (opcional para ciertas funcionalidades) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
