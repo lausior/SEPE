@@ -1,0 +1,11 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width:922px) {
+    div {
+        display: flex;
+        justify-content: left;
+    }
+}

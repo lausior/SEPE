@@ -1,0 +1,15 @@
+h1{
+    font-size: 8em;
+}
+
+@media(max-width:800px){
+    h1{
+        font-size: 2rem;;
+    }
+}
+
+@media(max-width:500px){
+    h1{
+        font-size: 0.4rem;
+    }
+}
