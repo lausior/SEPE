@@ -1,0 +1,9 @@
+body{
+    background-color: blueviolet;
+}
+
+@media(min-width:600px){
+    body{
+        background-color: rgb(55, 212, 240);
+    }
+}

@@ -35,6 +35,14 @@ input {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
+.radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+>>>>>>> bcdc7eff630be35402a633bf5c5e116d07c70168
 button {
     width: 100%;
     padding: 12px;
@@ -45,6 +53,7 @@ button {
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 
 /*MENSAJE DE ERROR INPUT- OCULTO POR DEFECTO
   MENSAJE INPUT VACÍO - OCULTO POR DEFECTO
@@ -53,11 +62,16 @@ button {
 .error-formato-input, 
 .error-input-vacio,
 .mensaje-error-formulario{
+=======
+/* Error oculto */
+.error-input {
+>>>>>>> bcdc7eff630be35402a633bf5c5e116d07c70168
     color: red;
     font-size: 12px;
     display: none;
 }
 
+<<<<<<< HEAD
 /*MENSAJE DE ERROR INPUT- VISIBLE*/
 .mensaje-error-visible{
     display: block;
@@ -70,3 +84,14 @@ button {
 
 
 
+=======
+/* Input en error */
+.input-error {
+    border: 2px solid red;
+}
+
+/* Mostrar error */
+.error-visible {
+    display: block;
+}
+>>>>>>> bcdc7eff630be35402a633bf5c5e116d07c70168

@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #767c40;
+  transition: 0.3s;
+  padding-top: 60px;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+#sidebar li {
+  padding: 15px;
+}
+
+#sidebar a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Contenido */
+main {
+  padding: 20px;
+}
+
+
+@media(max-width:900px){
+    #sidebar{
+        display: none;
+    }
+}
+
+

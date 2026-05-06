@@ -1,4 +1,5 @@
 function validarTexto(input) {
+<<<<<<< HEAD
     //Epresión regular
     const regex = /^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]+$/;
 
@@ -54,3 +55,30 @@ function validarTexto(input) {
 //     //Evita el envío del formulario
 //    e.preventDefault(); //'e' es el objeto evento que me da el navegador, y con e.preventDefault() evito que el formulario se envíe
 // });
+=======
+    let valor = input.value;
+    let error = input.nextElementSibling;
+    let regex = /^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]+$/;
+
+    if (!regex.test(valor)) {
+        input.classList.add("input-error");
+        error.classList.add("error-visible");
+    } else {
+        input.classList.remove("input-error");
+        error.classList.remove("error-visible");
+    }
+}
+
+function validarDni(){
+    let valor = document.getElementById("dni");
+    let regex = /^\d{8}[A-Za-z]$/;
+
+    if (!regex.test(valor)) {
+        input.classList.add("input-error");
+        error.classList.add("error-visible");
+    } else {
+        input.classList.remove("input-error");
+        error.classList.remove("error-visible");
+    }
+}
+>>>>>>> bcdc7eff630be35402a633bf5c5e116d07c70168
