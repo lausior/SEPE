@@ -1,0 +1,29 @@
+/*Color de fondo*/
+body{
+    background-color: rgb(238, 233, 233);
+}
+
+/*Formato títulos*/
+h1, h2{
+    color: blue;
+}
+
+/*Formato imágenes*/
+img{
+    width: 200px;
+    border-radius: 5px;
+}
+
+/*Formato párrafo*/
+#parrafo{
+    width: 70%;
+    font-size: 16px;/*por defecto*/
+    margin: auto;
+    text-align: center;
+}
+
+/*Formato lista*/
+#lista{
+    text-align: left;
+    list-style: circle;
+}

@@ -1,0 +1,269 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #e0eafc 0%, #cfdef3 100%);
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            padding: 2rem 1.5rem;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Tarjeta principal */
+        .form-container {
+            max-width: 920px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 0, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* Cabecera */
+        .form-header {
+            background: #1e3c72;
+            background: linear-gradient(135deg, #0b2b44 0%, #1e4a76 100%);
+            padding: 1.8rem 2rem;
+            color: white;
+        }
+
+        .form-header h1 {
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.3rem;
+        }
+
+        .form-header p {
+            font-size: 0.95rem;
+            opacity: 0.85;
+            margin-top: 0.25rem;
+        }
+
+        /* Cuerpo del formulario */
+        .form-body {
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        /* Grid responsivo */
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem 1.8rem;
+        }
+
+        /* campos full-width en móvil */
+        @media (max-width: 640px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+            .form-body {
+                padding: 1.5rem;
+            }
+            .form-header h1 {
+                font-size: 1.6rem;
+            }
+        }
+
+        /* grupo de campo */
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.45rem;
+        }
+
+        .input-group.full-width {
+            grid-column: span 2;
+        }
+
+        @media (max-width: 640px) {
+            .input-group.full-width {
+                grid-column: span 1;
+            }
+        }
+
+        label {
+            font-weight: 600;
+            color: #1f2f47;
+            font-size: 0.85rem;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        label i {
+            font-style: normal;
+            font-weight: 400;
+            color: #e67e22;
+        }
+
+        .required-star {
+            color: #e63946;
+            font-size: 1rem;
+            margin-left: 2px;
+        }
+
+        input, select {
+            padding: 0.8rem 1rem;
+            border: 1.5px solid #e2e8f0;
+            border-radius: 1rem;
+            font-size: 0.95rem;
+            font-family: inherit;
+            background-color: #fefefe;
+            transition: all 0.2s;
+            outline: none;
+            color: #0a1c2f;
+        }
+
+        input:focus, select:focus {
+            border-color: #2c7da0;
+            box-shadow: 0 0 0 3px rgba(44, 125, 160, 0.2);
+            background-color: #ffffff;
+        }
+
+        input:hover, select:hover {
+            border-color: #94a3b8;
+        }
+
+        /* grupo radio personalizado */
+        .radio-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+            background: #f8fafc;
+            padding: 0.6rem 1rem;
+            border-radius: 1rem;
+            border: 1.5px solid #e2e8f0;
+            margin-top: 0.2rem;
+        }
+
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            cursor: pointer;
+        }
+
+        .radio-option input[type="radio"] {
+            appearance: none;
+            width: 1.1rem;
+            height: 1.1rem;
+            border: 2px solid #5b6e8c;
+            border-radius: 50%;
+            margin: 0;
+            padding: 0;
+            background: white;
+            transition: 0.1s linear;
+            cursor: pointer;
+        }
+
+        .radio-option input[type="radio"]:checked {
+            border: 5px solid #1e4a76;
+            background-color: white;
+        }
+
+        .radio-option label {
+            font-weight: 500;
+            color: #1e293b;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        /* botón y mensajes */
+        .form-actions {
+            margin-top: 2.2rem;
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 1.8rem;
+            border: none;
+            border-radius: 2rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .btn-primary {
+            background: #1e4a76;
+            color: white;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            background: #0f3b5c;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-secondary {
+            background: #eef2f6;
+            color: #2c3e50;
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-secondary:hover {
+            background: #e2e8f0;
+            transform: translateY(-1px);
+        }
+
+        .info-message {
+            background: #eef2ff;
+            border-left: 5px solid #1e4a76;
+            padding: 0.8rem 1rem;
+            border-radius: 1rem;
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #1f3a4b;
+            display: none;
+        }
+
+        .info-message.show {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .error-text {
+            color: #dc2626;
+            font-size: 0.7rem;
+            margin-top: 0.2rem;
+            display: none;
+        }
+
+        .error-text.show-error {
+            display: block;
+        }
+
+        hr {
+            margin: 1rem 0 0.5rem;
+            border: 0;
+            height: 1px;
+            background: #e2e8f0;
+        }
+
+        .field-note {
+            font-size: 0.7rem;
+            color: #5b6e8c;
+            margin-top: 0.2rem;
+        }
+
+        small {
+            font-size: 0.7rem;
+        }

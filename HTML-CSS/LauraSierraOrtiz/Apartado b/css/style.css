@@ -1,0 +1,11 @@
+/*input nombre rojo*/
+.nombre:focus{
+    background-color: red;
+}
+
+/*margen inputs*/
+.input{
+    margin-bottom: 1em;
+}
+
+

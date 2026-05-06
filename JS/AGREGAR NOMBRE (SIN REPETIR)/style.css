@@ -1,0 +1,190 @@
+/* --- ESTILOS CON LOS COLORES DE ACADEMIA POSTAL --- */
+body {
+    background-color: #F5F5F5;
+    /* Gris claro de fondo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* TARJETA PRINCIPAL */
+article.card {
+    border: none;
+    border-radius: 16px;
+    /* Bordes ligeramente redondeados */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    /* Sombra sutil */
+    background: white;
+    max-width: 500px;
+    width: 100%;
+    overflow: hidden;
+    /* Para que el header respete el borde redondeado */
+}
+
+/* CABECERA - Usamos el Azul/Navy corporativo */
+header.card-header {
+    background-color: #1D4289;
+    /* Azul principal */
+    color: white;
+    padding: 30px 25px;
+    text-align: center;
+    border-bottom: 4px solid #82B440;
+    /* Detalle en verde */
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+}
+
+/* CUERPO DE LA TARJETA */
+section.card-body {
+    padding: 30px;
+}
+
+/* FORMULARIO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    color: #333333;
+    /* Gris oscuro para texto */
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* CAMPO DE ENTRADA */
+input {
+    width: 100%;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+input:focus {
+    border-color: #82B440;
+    /* Verde al hacer foco */
+    box-shadow: 0 0 0 3px rgba(130, 180, 64, 0.2);
+    outline: none;
+}
+
+/* Error oculto */
+.error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* Input en error */
+.input-error {
+    border: 2px solid red;
+}
+
+/* Mostrar error */
+.error-visible {
+    display: block;
+}
+
+/* BOTÓN PRINCIPAL - Usamos el Verde Corporativo */
+button {
+    background-color: #82B440;
+    /* Verde principal */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #6A9436;
+    /* Verde más oscuro para el hover */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(130, 180, 64, 0.3);
+}
+
+/* ÁREA DE RESULTADO */
+#resultado {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 25px;
+    transition: all 0.2s ease;
+}
+
+/* Resultado: Sí puedes beber (Verde suave) */
+.result-success {
+    background-color: #F0F7E8;
+    /* Fondo verde muy claro */
+    color: #4A7A22;
+    /* Texto verde oscuro */
+    border-left: 5px solid #82B440;
+}
+
+/* Resultado: NO puedes beber (Toque naranja) */
+.result-error {
+    background-color: #FEF5E8;
+    /* Fondo naranja muy claro */
+    color: #D97800;
+    /* Texto naranja oscuro */
+    border-left: 5px solid #F39200;
+    /* Naranja de detalle */
+}
+
+/* PIE DE PÁGINA */
+footer {
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.75rem;
+    color: #777777;
+    background-color: #F9F9F9;
+    border-top: 1px solid #EEEEEE;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    section.card-body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .card-header {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+/*MENSAJE DE ERROR INPUT- OCULTO POR DEFECTO
+  MENSAJE INPUT VACÍO - OCULTO POR DEFECTO
+  MENSAJE ERROR FORM - OCULTO POR DEFECTO
+  */
+.error-formato-input, 
+.error-input-vacio,
+.mensaje-error-formulario{
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/*MENSAJE DE ERROR INPUT- VISIBLE*/
+.mensaje-error-visible{
+    display: block;
+}
+
+/*ESTILO DEL INPUT - CASO DE ERROR*/
+.input-error{
+    border: 2px solid red;
+}
+
+
+

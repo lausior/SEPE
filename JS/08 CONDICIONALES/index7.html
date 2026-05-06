@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Registro Camping</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f5e9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h2 {
+    text-align: center;
+    color: #2e7d32;
+}
+
+/* GRID 2 COLUMNAS */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* SECCIONES */
+.seccion {
+    border: 2px solid #c8e6c9;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.seccion h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+/* CAMPOS */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-column: span 2;
+}
+
+button:hover {
+    background: #1b5e20;
+}
+
+#mensaje {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h2>Registro Camping</h2>
+
+    <form id="formulario" class="form-grid">
+
+        <!-- SECCIÓN DATOS PERSONALES -->
+        <div class="seccion">
+            <h3>Datos personales</h3>
+
+            <label>Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label>Apellidos:</label>
+            <input type="text" id="apellidos" required>
+
+            <label>DNI:</label>
+            <input type="text" id="dni" required>
+
+            <label>Teléfono:</label>
+            <input type="tel" id="telefono" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+        </div>
+
+        <!-- SECCIÓN RESERVA -->
+        <div class="seccion">
+            <h3>Datos de la reserva</h3>
+
+            <label>Fecha de llegada:</label>
+            <input type="date" id="llegada" required>
+
+            <label>Fecha de salida:</label>
+            <input type="date" id="salida" required>
+
+            <label>Número de adultos:</label>
+            <input type="number" id="adultos" min="1" required>
+
+            <label>Número de niños:</label>
+            <input type="number" id="ninos" min="0" required>
+
+            <label>Tipo de alojamiento:</label>
+            <select id="tipo">
+                <option value="tienda">Tienda</option>
+                <option value="caravana">Caravana</option>
+                <option value="bungalow">Bungalow</option>
+            </select>
+
+            <label>Tipo de vehículo:</label>
+            <select id="vehiculo">
+                <option value="autocaravana">Autocaravana</option>
+                <option value="coche">Coche</option>
+                <option value="moto">Moto</option>
+            </select>
+        </div>
+
+        <button type="submit">Registrarse</button>
+
+    </form>
+
+    <div id="mensaje"></div>
+</div>
+
+<script>
+document.getElementById("formulario").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    var nombre = document.getElementById("nombre").value;
+    var llegada = document.getElementById("llegada").value;
+    var salida = document.getElementById("salida").value;
+    var adultos = document.getElementById("adultos").value;
+
+    if (llegada >= salida) {
+        document.getElementById("mensaje").innerHTML = "La fecha de salida debe ser posterior a la de llegada";
+        document.getElementById("mensaje").style.color = "red";
+    } else if (adultos < 1) {
+        document.getElementById("mensaje").innerHTML = "Debe haber al menos 1 adulto";
+        document.getElementById("mensaje").style.color = "red";
+    } else {
+        document.getElementById("mensaje").innerHTML = "Registro completado correctamente. ¡Bienvenido/a, " + nombre + "!";
+        document.getElementById("mensaje").style.color = "green";
+    }
+});
+</script>
+
+</body>
+</html>

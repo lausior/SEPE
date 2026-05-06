@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 id="titulo">Titulo2</h2> <!-- id="titulo" -->
+
+    <p id="avisos"></p> <!-- id="avisos" -->
+
+    <script>
+        
+        //Cogemos el nodo con id="titulo"
+        const miNodo = document.getElementById("titulo");
+        //Imprimimos la const 'miNodo'
+        console.log(miNodo);
+        //Modificamos el contenido de la cons 'miNodo'
+        miNodo.innerText = "Nos vamos, mañana más";
+        
+
+        //Cogemos el nodo con id="avisos"
+        const otroNodo = document.getElementById("avisos");
+        //Forma 1 de modificar el contenido
+        document.getElementById("avisos").innerText = "Hola";
+        //Imprimimos el resultado
+        console.log(otroNodo);
+
+        //Forma 2 de modificar el contenido
+        otroNodo.innerText = "Hola 2";
+        //Imprimimos el resultado
+        console.log(otroNodo);
+        
+        
+    </script>
+</body>
+</html>
