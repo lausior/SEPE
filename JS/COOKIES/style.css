@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+h1{
+    margin-top: 2em;
+}
+
+.boton{
+    padding: 1em;
+    border-radius: 25px;
+    width: 200px;
+}
+
+/*MODO CLARO*/
+.h1-modo-claro{
+    color: rgb(31, 28, 28);
+    transition: 1s;
+}
+
+.body-modo-claro{
+    background-color: beige;
+    transition: 1s;
+}
+
+/*MODO CLARO*/
+.h1-modo-oscuro{
+    color: rgb(224, 215, 215);
+   transition: 1s;
+}
+
+.body-modo-oscuro{
+    background-color: rgb(71, 71, 69);
+    transition: 1s;
+}

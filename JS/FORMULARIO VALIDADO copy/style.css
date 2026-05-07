@@ -59,7 +59,8 @@ button {
 }
 
 /*MENSAJE DE ERROR INPUT- VISIBLE*/
-.mensaje-error-visible{
+.mensaje-error-visible,
+.mensaje-valido-visible{
     display: block;
 }
 
@@ -67,3 +68,11 @@ button {
 .input-error{
     border: 2px solid red;
 }
+
+/*MENSAJE FORMULARIO VALIDADO*/
+.mensaje-formulario-validado{
+    color: rgb(1, 148, 38);
+    font-size: 12px;
+    display: none;
+}
+

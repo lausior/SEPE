@@ -1,3 +1,4 @@
+//FUNCIÓN VALIDAR TEXTO
 function validarTexto(input) {
     //Epresión regular
     const regex = /^[A-Za-zÁÉÍÓÚÜÑáéíóúüñ\s]+$/;
@@ -48,8 +49,35 @@ function validarTexto(input) {
     
 }
 
-// document.getElementById("formulario").addEventListener("submit", (e)=>{
-//     validarTexto(input);
-//     //Evita el envío del formulario
-//    e.preventDefault(); //'e' es el objeto evento que me da el navegador, y con e.preventDefault() evito que el formulario se envíe
-// });
+document.getElementById("formulario").addEventListener("submit", (e)=>{
+    const nombre = document.getElementById("nombre");
+    const apellidos = document.getElementById("apellidos");
+
+     // Validaciones
+    const nombreValido = validarTexto(nombre);
+    const apellidosValidos = validarTexto(apellidos);
+
+
+     // Mensaje general
+    const errorFormulario = document.getElementById("error-formulario");
+    const validoFormulario = document.getElementById("valido-formulario");
+
+    // Si hay errores
+    if (!nombreValido || !apellidosValidos) {
+
+        e.preventDefault();//'e' es el objeto evento que me da el navegador, y con e.preventDefault() evito que el formulario se envíe
+
+        errorFormulario.classList.add("mensaje-error-visible");
+         // Ocultar mensaje válido
+        validoFormulario.classList.remove("mensaje-valido-visible");
+
+
+    } 
+    else {
+          // Ocultar mensaje error
+        errorFormulario.classList.remove("mensaje-error-visible");
+
+        validoFormulario.classList.add("mensaje-valido-visible");
+    }
+    
+});
