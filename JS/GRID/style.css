@@ -1,0 +1,57 @@
+.contenedor{
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "menu menu menu"
+        "aside article article"
+        "footer footer footer";
+    
+    grid-template-columns: 150px 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 4fr 1fr;
+    gap: 0.5em;
+    height: 97vh;
+}
+
+.header{
+  background-color: aquamarine;
+  grid-area: header;
+  background-color: rgb(116, 138, 238);
+}
+
+.menu{
+    grid-area: menu;
+    background-color: rgb(146, 92, 139);
+}
+
+.article{
+    background-color: rgb(174, 236, 139);
+    display: grid;
+    column-gap: 0.5em;
+    grid-area: article;
+}
+
+.aside{
+    border: 1px solid black;
+    grid-area: aside;
+    background-color: rgb(238, 130, 116);
+}
+
+.article{
+    border: 1px solid green;
+    display: grid;
+    row-gap: 1em;
+    grid-area: article;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.section{
+    border: 1px solid black;
+}
+
+
+.footer{
+    background-color: rgb(31, 190, 230);
+    grid-area: footer;
+}
+
