@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Formulario</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
-<div class="container">
-    <h2>Formulario de Datos</h2>
+    <div class="container">
+        <h2>Formulario de Datos</h2>
 
-    <form id="formulario" action="formValidado.php">
-    <div class="form-group">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" class="input-text" onblur="validarTexto(this)">
-        <p class="error-input-vacio">Campo obligatorio</p>
-        <p class="error-formato-input">Formato incorrecto (solo letras y espacios)</p>
-        
+        <form id="formulario" action="formValidado.php">
+            <!--NOMBRE-->
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="input-text" onblur="validarTexto(this)">
+                <p class="error-input-vacio">Campo obligatorio</p>
+                <p class="error-formato-input">Formato de nombre incorrecto (solo letras y espacios)</p>
+            </div>
+
+            <!--APELLIDOS-->
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" class="input-text" onblur="validarTexto(this)">
+                <p class="error-input-vacio">Campo obligatorio</p>
+                <p class="error-formato-input">Formato de apellidos incorrecto (solo letras y espacios)</p>
+            </div>
+
+            
+
+            <p id="error-formulario" class="mensaje-error-formulario">Revise los errores del formulario</p>
+            <p id="valido-formulario" class="mensaje-formulario-validado">Datos enviados correctamente</p>
+
+            <button id="validar" type="button">Enviar</button>
+        </form>
     </div>
-
-    <div class="form-group">
-        <label for="apellidos">Apellidos</label>
-        <input type="text" id="apellidos" name="apellidos" class="input-text" onblur="validarTexto(this)">
-        <p class="error-input-vacio">Campo obligatorio</p>
-        <p class="error-formato-input">Formato incorrecto (solo letras y espacios)</p>
-        
-    </div>
-
-    <p id="error-formulario" class="mensaje-error-formulario">Revise los errores del formulario</p>
-    <p id="valido-formulario" class="mensaje-formulario-validado">Datos enviados correctamente</p>
-
-    <button type="submit">Enviar</button>
-</form>
-</div>
 
 
 </body>
+
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style></style>
+
+<body>
+    <form action="" id="formulario">
+
+        <label for="fechaNacimiento">Fecha nacimiento</label>
+        <input type="date" name="fechaNacimiento" id="fechaNacimiento">
+
+        <button type="button" id="button">Comprobar</button>
+    </form>
+
+
+    <script>
+
+
+
+        //FUNCIÓN FECHA NACIMIENTO
+        function fechaNacimiento() {
+
+            let fechaNacimiento = document.getElementById("fechaNacimiento").value;
+            console.log(fechaNacimiento);
+            //Cogemos la fecha del formulario
+            let fechaSeparada = fecha.split("/");
+            //Guardamos cada índice en una variable
+            let diaNac = parseInt(fechaSeparada[0]);
+            let mesNac = parseInt(fechaSeparada[1]);
+            let anoNac = parseInt(fechaSeparada[2]);
+
+            console.log()
+
+            //Cogemos la fecha actual
+            let fechaActual = new Date();
+            //Cogemos el día, mes y año actual
+            let diaActual = fechaActual.getDate();
+            let mesActual = fechaActual.getMonth();
+            let anoActual = fechaActual.getFullYear();
+        }
+
+        document.getElementById("button").addEventListener("click", () => {
+            //Cogemos el valor del input y limpiamos los espacios
+            let valor = input.value.trim();
+
+            //Cogemos los elementos con el selector ".error-input-vacio" (<p>)
+            let errorVacio = input.parentElement.querySelector(".error-input-vacio");
+
+            //Cogemos los elementos con el selector ".error-formato-input" (<p>)
+            let errorFormato = input.parentElement.querySelector(".error-formato-input");
+        });
+
+
+    </script>
+</body>
+
+</html>

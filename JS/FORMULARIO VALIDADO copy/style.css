@@ -10,7 +10,7 @@ body {
     background: white;
     padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -46,33 +46,73 @@ button {
 }
 
 
-/*MENSAJE DE ERROR INPUT- OCULTO POR DEFECTO
-  MENSAJE INPUT VACÍO - OCULTO POR DEFECTO
-  MENSAJE ERROR FORM - OCULTO POR DEFECTO
-  */
-.error-formato-input, 
-.error-input-vacio,
-.mensaje-error-formulario{
-    color: red;
-    font-size: 12px;
-    display: none;
-}
-
-/*MENSAJE DE ERROR INPUT- VISIBLE*/
-.mensaje-error-visible,
-.mensaje-valido-visible{
-    display: block;
-}
-
-/*ESTILO DEL INPUT - CASO DE ERROR*/
-.input-error{
+/*ERROR INPUT*/
+.input-error{/*clase que se añadirá a los <input> cuando haya un error*/
     border: 2px solid red;
 }
 
-/*MENSAJE FORMULARIO VALIDADO*/
+/*MENSAJE ERROR INPUT VACÍO- OCULTO POR DEFECTO,
+  MENSAJE ERROR FORMATO INPUT - OCULTO POR DEFECTO,
+  MENSAJE DE ERROR FORMULARIO -OCULTO POR DEFECTO*/
+  .error-input-vacio,
+  .error-formato-input,
+  .mensaje-error-formulario{
+    color: red;
+    font-size: 12px;
+    display: none;
+  }
+
+/*MENSAJE FORMULARIO VÁLIDO - OCULTO POR DEFECTO*/
 .mensaje-formulario-validado{
-    color: rgb(1, 148, 38);
+    color: rgb(3, 110, 3);
     font-size: 12px;
     display: none;
 }
 
+
+/*MENSAJES DE ERROR VISIBLES*/
+.mensaje-error-visible{/*clase que añadiremos a los <p> para que se muestren cuando haya errores*/
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /*MENSAJE DE ERROR INPUT- OCULTO POR DEFECTO
+  MENSAJE INPUT VACÍO - OCULTO POR DEFECTO
+  MENSAJE ERROR FORM - OCULTO POR DEFECTO
+  */
+/* .error-input-vacio,
+.error-formato-input,
+.mensaje-error-formulario {
+    color: red;
+    font-size: 12px;
+    display: none;
+} */
+
+/*MENSAJE DE ERROR INPUT- VISIBLE*/
+/* .mensaje-error-visible,
+.mensaje-valido-visible {
+    display: block;
+} */
+
+/*ESTILO DEL INPUT - CASO DE ERROR*/
+/* .input-error {
+    border: 2px solid red;
+} */
+
+/*MENSAJE FORMULARIO VALIDADO*/
+/* .mensaje-formulario-validado {
+    color: rgb(1, 148, 38);
+    font-size: 12px;
+    display: none;
+}  */
