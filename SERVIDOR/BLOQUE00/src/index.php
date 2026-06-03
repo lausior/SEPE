@@ -35,7 +35,7 @@ $nombre_completo = ucwords(strtolower($nombre . ' ' . $apellidos));
             display: flex;
             margin: 12px 0;
             border-bottom: 1px solid #eee;
-            padding- bottom: 8px;
+            padding-bottom: 8px;
         }
 
         .etiqueta {
