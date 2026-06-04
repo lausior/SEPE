@@ -1,0 +1,39 @@
+body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            background: #f5f5f5;
+        }
+
+        .ficha {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .campo {
+            display: flex;
+            margin: 12px 0;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+
+        .etiqueta {
+            font-weight: bold;
+            color: #1A3C6E;
+            width: 180px;
+            flex-shrink: 0;
+        }
+
+        h1 {
+            color: #1A3C6E;
+            text-align: center;
+        }
+
+        .debug {
+            background: #f4f6f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
