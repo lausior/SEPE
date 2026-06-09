@@ -5,7 +5,7 @@ services:
   # ── Servidor web Nginx
   nginx:
     image: nginx:alpine
-    container_name: pg_nginx
+    container_name: prueba_nginx
     ports:
       - "8080:80"
     volumes:
@@ -19,7 +19,7 @@ services:
   # ── PHP-FPM con extensión PostgreSQL
   php:
     build: .
-    container_name: pg_php
+    container_name: prueba_php
     volumes:
       - ./src:/var/www/html
     depends_on:
@@ -36,7 +36,7 @@ services:
   # ── PostgreSQL 16
   postgres:
     image: postgres:16-alpine
-    container_name: pg_postgres
+    container_name: prueba_db
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
@@ -57,7 +57,7 @@ services:
   # ── pgAdmin 4 (interfaz gráfica)
   pgadmin:
     image: dpage/pgadmin4:latest
-    container_name: pg_admin
+    container_name: prueba_pgadmin
     ports:
       - "8081:80"
     environment:
