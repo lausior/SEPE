@@ -11,13 +11,13 @@
     <body>
         <h1>Mi Ficha Personal</h1>
         
-        <form method="POST" action="procesar.php">
+        <form method="POST" action="procesado.php">
 
     <div class="ficha">
 
         <div class="campo">
             <label class="etiqueta">Nombre completo:</label>
-            <input type="text" name="nombre_completo" required>
+            <input type="text" name="nombre" required>
         </div>
 
         <div class="campo">
@@ -32,7 +32,7 @@
 
         <div class="campo">
             <label class="etiqueta">Año de nacimiento:</label>
-            <input type="number" name="anio_nacimiento">
+            <input type="date" name="fecha_nacimiento">
         </div>
 
         <div class="campo">
