@@ -16,7 +16,9 @@
                     <h2>Proyecto de Tareas</h2>
                 </div>
                 <div class="container">
-                    <p>Me llamo Laura, tengo 34 años y es mi tercer año estudiando DAW.</p>
+                   <form action="nuevoUsuario.php" method="POST">
+                    <?php include_once('vista/form.php'); ?>
+                   </form>
                 </div>
             </main>
         </div>

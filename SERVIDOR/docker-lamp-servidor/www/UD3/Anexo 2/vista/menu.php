@@ -14,12 +14,12 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="usuarios/usuarios.php">
-                    Lista de usuarios (PDO)
+                    Lista de usuarios
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="usuarios/nuevoUsuarioForm.php">
-                    Nuevo usuario (PDO)                    
+                    Nuevo usuario                   
                 </a>
             </li>
             <li class="nav-item">

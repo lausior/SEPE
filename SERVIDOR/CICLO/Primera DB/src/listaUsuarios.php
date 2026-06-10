@@ -8,12 +8,12 @@
 </head>
 <body>
 
-    <?php include_once('../vista/header.php'); ?>
+    <?php include_once('vista/header.php'); ?>
 
     <div class="container-fluid">
         <div class="row">
             
-            <?php include_once('../vista/menu.php'); ?>
+            <?php include_once('vista/menu.php'); ?>
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="container justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -31,15 +31,13 @@
                                     <th>ID</th>
                                     <th>Nombre</th>
                                     <th>Apellidos</th>
-                                    <th>Fecha de nacimiento</th>
+                                    <th>DNI</th>
                                     <th>Localidad</th>
                                     <th>Email</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                   
-                                ?>
+                                
                             </tbody>
                         </table>
                     </div>
@@ -51,7 +49,9 @@
         </div>
     </div>
 
-    <?php include_once('../vista/footer.php'); ?>
+    <?php include_once('vista/footer.php'); ?>
     
 </body>
 </html>
+
+

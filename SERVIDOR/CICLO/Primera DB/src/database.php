@@ -28,6 +28,7 @@ function conectarDB(): PDO{
         $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
         //Devuelve la conexión establecida
+       
         return $pdo;
 
     } 

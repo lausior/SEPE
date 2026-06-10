@@ -27,12 +27,12 @@
 
     //IMPRIMIMOS EL RESULTADO
     echo "<div>";
-    echo "<p>NOMBRE: " . $nombre . "</p>";
-    echo "<p>APELLIDOS: " . $apellidos . "</p>";
-    echo "<p>EDAD: " . $edad . "</p>";
-    echo "<p>LOCALIDAD: " . $localidad . "</p>";
-    echo "<p>EMAIL: " . $email . "</p>";
-    echo "<p>WEBSITE: " . $website . "</p>";
+      echo "<p>NOMBRE: " . $nombre . "</p>";
+      echo "<p>APELLIDOS: " . $apellidos . "</p>";
+      echo "<p>EDAD: " . $edad . "</p>";
+      echo "<p>LOCALIDAD: " . $localidad . "</p>";
+      echo "<p>EMAIL: " . $email . "</p>";
+      echo "<p>WEBSITE: " . $website . "</p>";
     echo "</div>";
   }
   ?>

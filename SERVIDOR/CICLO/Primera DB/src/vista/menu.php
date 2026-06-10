@@ -2,18 +2,18 @@
     <div class="position-sticky">
         <ul class="nav flex-column">
             <li class="nav-item">
-                <a class="nav-link" href="index.php">
+                <a class="nav-link" href="../index.php">
                     Home
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="listaTareas.php">
-                    Mis Tareas
+                <a class="nav-link" href="../listaUsuarios.php">
+                    Lista de usuarios
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="nuevaForm.php">
-                    Nueva Tarea
+                <a class="nav-link" href="../nuevoUsuarioForm.php">
+                    Nuevo usuario
                 </a>
             </li>
         </ul>

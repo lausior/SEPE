@@ -16,7 +16,7 @@
                     <h2>Proyecto de Tareas</h2>
                 </div>
                 <div class="container">
-                    <p>Me llamo Laura, tengo 34 años y es mi tercer año estudiando DAW.</p>
+                    <p>Usuario creado correctamente.</p>
                 </div>
             </main>
         </div>
