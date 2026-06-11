@@ -5,7 +5,7 @@ function conectarDB(): PDO{
     //Lee la configuaración de la base de datos desde las variables de entorno
     $host = $_ENV['POSTGRES_HOST'] ?? 'postgres';
     $port = $_ENV['POSTGRES_PORT'] ?? '5432';
-    $db   = $_ENV['POSTGRES_DB'] ?? 'db_1';
+    $db   = $_ENV['POSTGRES_DB'] ?? 'db_2';
     $user = $_ENV['POSTGRES_USER'] ?? 'php_user';
     $pass = $_ENV['POSTGRES_PASSWORD'] ?? '';
     //$nombreVariable = $_variable de .env['NOMBRE_VARIABLE'] ?? ' valor_por_defecto';
