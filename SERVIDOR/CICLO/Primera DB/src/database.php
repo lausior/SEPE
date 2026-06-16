@@ -43,11 +43,13 @@ function insertar_usuario(string $nombre, string $apellidos, string $dni, string
     try {
         //Conectamos la DB llamando a la función
         $pdo = conectarDB();
+
         //Preparamos la consulta 
         $sql = $pdo->prepare(
             "INSERT INTO usuarios (nombre, apellidos, dni, localidad, email)
             VALUES (:nombre, :apellidos, :dni, :localidad, :email)"
         );
+
         //Ejecutamos la consulta con los datos recibidos
         return $sql->execute([
             ':nombre'     => $nombre,
@@ -98,6 +100,7 @@ function actualizar_usuario(int $id, string $nombre, string $apellidos, string $
             ':localidad' => $localidad,
             ':email' => $email
         ]);
+        
     } catch (Exception $e) {
         throw new Exception("Error al actualizar usuario: " . $e->getMessage());
     }
@@ -108,12 +111,16 @@ function eliminar_usuario(int $id): bool{
     try {
         //Conectamos la DB llamando a la función
         $pdo = conectarDB();
+
         //Creamos la consulta para eliminar el usuario con el ID recibido
         $sql = "DELETE FROM usuarios WHERE id = :id";
+
         //Preparamos la consulta
         $stmt = $pdo->prepare($sql);
+
         //Ejecutamos la consulta con el ID recibido
         return $stmt->execute([':id' => $id]);
+
     } catch (Exception $e) {
         throw new Exception("Error al eliminar usuario: " . $e->getMessage());
     }

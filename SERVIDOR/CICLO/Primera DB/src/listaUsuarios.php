@@ -9,14 +9,14 @@
 <body>
 
     <?php 
-    require_once('database.php');
-    include_once('vista/header.php'); 
+    require_once('database.php'); // link a database.php
+    include_once('vista/header.php'); // link a header.php
     ?>
 
     <div class="container-fluid">
         <div class="row">
             
-            <?php include_once('vista/menu.php'); ?>
+            <?php include_once('vista/menu.php'); ?> <!-- link a menu.php -->
 
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <div class="container justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
