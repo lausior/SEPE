@@ -1,3 +1,33 @@
+<?php
+require_once('database.php');
+
+$mensaje = '';
+
+// Procesa el formulario solo si se ha enviado por POST
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    try {
+        // Recibe los datos del formulario
+        $nombre = $_POST['nombre'] ?? '';
+        $apellidos = $_POST['apellidos'] ?? '';
+        $dni = $_POST['dni'] ?? '';
+        $localidad = $_POST['localidad'] ?? '';
+        $email = $_POST['email'] ?? '';
+
+        // Valida que no estén vacíos
+        if (empty($nombre) || empty($apellidos) || empty($dni) || empty($localidad) || empty($email)) {
+            throw new Exception('❌ Todos los campos son obligatorios.');
+        }
+
+        // Llama la función para guardar el usuario
+        if (insertar_usuario($nombre, $apellidos, $dni, $localidad, $email)) {
+            $mensaje = '✅ Usuario creado correctamente.';
+        }
+    } catch (Exception $e) {
+        $mensaje = 'Error: ' . $e->getMessage();
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,7 +46,8 @@
                     <h2>Proyecto de Tareas</h2>
                 </div>
                 <div class="container">
-                    <p>Usuario creado correctamente.</p>
+                    <p><?php echo $mensaje; ?></p>
+                    <a href="listaUsuarios.php" class="btn btn-primary">Ver usuarios</a>
                 </div>
             </main>
         </div>

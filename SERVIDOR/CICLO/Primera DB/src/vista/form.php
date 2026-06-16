@@ -1,8 +1,3 @@
-<!-- ID -->
-<div class="mb-3">
-    <label for="id" class="form-label">Id</label>
-    <input type="text" class="form-control" id="id" name="id" value="" required>
-</div>
 <!-- NOMBRE -->
 <div class="mb-3">
     <label for="nombre" class="form-label">Nombre</label>
@@ -10,7 +5,7 @@
 </div>
 <!-- APELLIDOS -->
 <div class="mb-3">
-    <label for="descripcion" class="form-label">Apellidos</label>
+    <label for="apellidos" class="form-label">Apellidos</label>
     <input type="text" class="form-control" id="apellidos" name="apellidos" value="" required>
 </div>
 <!-- DNI -->
@@ -28,3 +23,4 @@
     <label for="email" class="form-label">Email</label>
     <input type="email" class="form-control" id="email" name="email" value="" required>
 </div>
+<button type="submit" class="btn btn-primary">Guardar</button>
