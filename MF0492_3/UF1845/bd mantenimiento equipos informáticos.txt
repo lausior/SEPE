@@ -1,0 +1,9 @@
+Diseñar una base de datos relacional para un sistema de registro de mantenimiento de equipos informáticos. La base de datos debe almacenar información sobre los equipos, su ubicación, el historial de mantenimiento y los problemas reportados.
+
+Los equipos deben tener campos como marca, modelo, número de serie, fecha de adquisición, ubicación, y características técnicas.
+
+El historial de mantenimiento debe tener campos como fecha, tipo de mantenimiento realizado, información sobre el técnico que realizó el mantenimiento y observaciones.
+
+Los problemas reportados deben tener campos como fecha, descripción del problema, solución y tiempo de inactividad.
+
+La base de datos debe establecer relaciones entre las tablas de equipos, historial de mantenimiento y problemas reportados, y permitir la consulta de información sobre el estado de los equipos, el historial de mantenimiento y los problemas reportados.

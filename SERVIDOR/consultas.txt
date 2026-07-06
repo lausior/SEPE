@@ -1,0 +1,19 @@
+Tomando a base de datos "sakila", faga as seguintes consultas:
+	1.	Actores que teñen de primeiro nome "Scarlett".
+	2.	Actores que teñen de apelido "Lollobrigida".
+	3.	Actores que conteñan polo menos unha 'o' no seu nome.
+	4.	Actores que conteñan polo menos unha 'o' no seu nome e unha 'a' no seu apelido.
+	5.	Cidades que comezan por A.
+	6.	Cidades que rematan en S.
+	7.	Cidades que pertencen ó país Mexico.
+	8.	Clientes que residen na cidade de Bratislava.
+	9.	Título, descrición e ano das películas que pertencen á categoría 'Sci-Fi'.
+	10.	Título das películas nas que participa o actor de nome 'Bob' e apelido 'Fawcett'.
+	11.	Dirección, distrito e cidade das tendas.
+	12.	Títulos das películas da categoría 'Horror' que están dispoñibles na tenda de 'Lethbridge'.
+	13.	Número de exemplares existentes da película titulada 'Academy Dinosaur'.
+	14.	Número de exemplares existentes da película titulada 'Academy Dinosaur' que hai en cada unha das tendas, indicando tamén dirección e cidade da tenda.
+	15.	Listado de categorías e número de películas existentes de cada categoría, ordenadas de máis a menos.
+	16.	Título e suma dos importes dos alugueres das 10 películas máis rentables.
+	17.	Nomes das categorías das que hai máis de 300 exemplares de películas.
+	18.	Listado de categorías cun promedio de duración de película superior á media de duración global.
